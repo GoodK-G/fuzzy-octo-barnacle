@@ -55,13 +55,11 @@ const questions = [
 
 let currentQuestion = 0;
 let score = 0;
-let timeLeft = 60; // in seconds
+let timeLeft = "60"; // in seconds
 let timerInterval; 
 
-var timer;
-var count = 60;
-// Event listener for the start button
-document.getElementById("startButton").addEventListener("click", startQuiz);
+
+
 
 // Function to update the countdown timer display
 function updateTimer() {
@@ -94,7 +92,8 @@ function endQuiz() {
     alert("Time's up! Your score is " + score);
 }
 
-
+// Event listener for the start button
+document.getElementById("startButton").addEventListener("click", startQuiz);
 
 // Call startQuiz() to initiate the quiz when the page loads
-startQuiz();
+// startQuiz();
